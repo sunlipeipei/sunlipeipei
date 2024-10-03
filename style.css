@@ -1,0 +1,21 @@
+.navbar {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color:  rgb(222, 222, 222);
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar-ele {
+    padding: 1px;
+}
+
+body {
+    font-family: sans-serif;
+}
