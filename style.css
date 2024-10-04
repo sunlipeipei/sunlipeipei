@@ -27,21 +27,18 @@
     margin-left: 0;
     margin-right: 0;
     display: grid;
-    grid-template-rows: 1fr 2fr 2fr;
-    grid-template-columns: 1fr 2fr 1fr;
+    padding-left: 20%;
+    padding-right: 20%;
     background-color:  rgb(222, 222, 222);
 
 }
 
 .intro-title {
-    grid-row: 1/2;
-    grid-column: 2/3;
     display: flex;
     justify-content: center;
     align-items: center; /* text centered vertically */
     flex-wrap: wrap;
     text-align: center; /* center the text inside flex containe */
-    /* border: 2px solid black; */
 }
 
 .intro-image {
@@ -50,9 +47,6 @@
     align-items: center; /* text centered vertically */
     flex-wrap: wrap;
     text-align: center; /* center the text inside flex containe */
-    /* border: 2px solid black; */
-    grid-row: 2/3;
-    grid-column: 2/3;
 }
 .profile-image {
     border-radius: 50%;
@@ -65,12 +59,52 @@
 }
 
 .intro-text {
-    grid-row: 3/4;
-    grid-column: 2/3;
     padding: 10px;
     font-size: large;
     text-align: center;
     color: rgb(66, 66, 66);
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.project-child-page {
+    margin-top: 60px;
+}
+.project-text {
+    max-width: 40%;
+    /* border: 2px solid black; */
+    padding: 15px;
+}
+
+.project-image-contener {
+    max-width: 40%;
+    /* border: 2px solid black; */
+}
+.project-image {
+    max-width: 100%;
+}
+
+.subtitle {
+    font-weight: lighter;
+    color: gray;
+}
+
+h1 {
+    font-weight: lighter;
+}
+
+h2 {
+    font-weight: normal;
 }
 
 body {
@@ -78,4 +112,26 @@ body {
     margin-left: 0;
     margin-right: 0;
     font-family: sans-serif;
+}
+
+button {
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+    .intro {
+        padding-left: 5%;
+        padding-right: 5%;
+    }    
+    .project-text {
+        max-width: 90%;
+        /* border: 2px solid black; */
+        padding: 15px;
+    }
+    
+    .project-image-contener {
+        max-width: 90%;
+        padding-top: 10px;
+        /* border: 2px solid black; */
+    }
 }
