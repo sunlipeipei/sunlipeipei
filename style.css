@@ -112,17 +112,27 @@ body {
     margin-left: 0;
     margin-right: 0;
     font-family: sans-serif;
+    min-width: 320px;
 }
 
 button {
     margin-top: 15px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
     .intro {
         padding-left: 5%;
         padding-right: 5%;
-    }    
+    } 
+    /* .navbar {
+        align-items: flex-start;
+    } */
+
+    .project {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     .project-text {
         max-width: 90%;
         /* border: 2px solid black; */
