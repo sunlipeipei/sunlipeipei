@@ -160,6 +160,11 @@
     content: '| '; /* Adding a little break before subtitles. */
 }
 
+.about-me {
+    background-color:  rgb(222, 222, 222);
+    height: 20px;
+}
+
 h1 {
     font-weight: 200;
 }
